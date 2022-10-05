@@ -1,1 +1,12 @@
+--init
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/stuff", true))()
+
+--main
+wait(0.88)
+if game.PlaceId == 4779613061 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Solar%20Hub/South%20London/s", true))()
+else
+game.Players.LocalPlayer.Kick("game not supported. for list of games join "..getgenv().discordinvsolar..". link copied to clipboard"
+wait()
+setclipboard(getgenv().discordinvsolar)
+end
