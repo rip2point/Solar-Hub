@@ -1,2 +1,20 @@
 getgenv().discordinvsolar = "https://discord.gg/6zGEpuEswE" -- dont try to change this skiddy skid!!!!!
 getgenv().versionsolar = "1.0.2"
+
+getgenv().hasPremium = nil
+
+local users = {
+228038574, -- owner
+221897035, -- dev
+759881255, -- dev
+275263932, -- forget
+1733169301, -- family
+2450635720, -- friend
+3224605521, -- throwaway
+}
+
+if table.find(users, game.Players.LocalPlayer.userId) then
+getgenv().hasPremium = true -- oh em gee you are so smart before you executed solar you put "getgenv().hasPremium = true!!!!! oh em gee you cracked solar!!!!!!
+end
+
+
