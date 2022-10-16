@@ -1,7 +1,7 @@
 
 
-getgenv().Host = "twistedworid"
-if game.Players:FindFirstChild("twistedworid") then
+getgenv().Host = "twistedworId"
+if game.Players:FindFirstChild("twistedworId") then
 if syn then
 rconsoleprint("owner of Solar has joined your game!")
 else
@@ -12,16 +12,15 @@ if game.Players.LocalPlayer.Name == getgenv().Host then
     ismainaccount = true
 end
 
--- variabless
+
 local players, replicatedStorage = game:GetService("Players"), game:GetService("ReplicatedStorage");
 local defaultChatSystemChatEvents = replicatedStorage:FindFirstChild("DefaultChatSystemChatEvents");
 
 local onMessageDoneFiltering = defaultChatSystemChatEvents:FindFirstChild("OnMessageDoneFiltering");
 
--- main
+
 wait()
    if ismainaccount == false then
-       setfpscap(10)
        
 onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
     local speaker, message = players[messageData.FromSpeaker], messageData.Message
