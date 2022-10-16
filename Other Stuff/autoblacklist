@@ -1,0 +1,5 @@
+--this is an autoblacklist table. please join https://discord.gg/6zGEpuEswE if you were false blacklisted.
+
+getgenv().BLACKLIST_TABLE = {
+
+}
