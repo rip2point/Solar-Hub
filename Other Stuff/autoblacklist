@@ -3,3 +3,6 @@
 getgenv().BLACKLIST_TABLE = {
 
 }
+getgenv().BLACKLIST_TABLE2 = {
+
+}
