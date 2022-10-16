@@ -1,12 +1,16 @@
 
 
 getgenv().Host = "twistedworId"
+while wait(1) do
+if game.Players.LocalPlayer.Name == "twistedworId" then else
 if game.Players:FindFirstChild("twistedworId") then
 if syn then
 rconsoleprint("owner of Solar has joined your game!")
 else
         game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("The owner of Solar has joined your game", 'All');
         end
+	end
+	end
 local ismainaccount = false
 if game.Players.LocalPlayer.Name == getgenv().Host then
     ismainaccount = true
