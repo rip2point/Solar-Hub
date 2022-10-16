@@ -1,8 +1,17 @@
 --this is an autoblacklist table. please join https://discord.gg/6zGEpuEswE if you were false blacklisted.
 
 getgenv().BLACKLIST_TABLE = {
-
+1234,
 }
 getgenv().BLACKLIST_TABLE2 = {
-
+"abcd",
 }
+wait()
+if table.match(getgenv().BLACKLIST_TABLE, game.Players.LocalPlayer.UserId) then
+game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
+elseif table.match(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Name) then
+game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
+elseif table.match(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Character.Name) then
+game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
+else
+end
