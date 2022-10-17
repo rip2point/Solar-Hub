@@ -1,8 +1,5 @@
 --init
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/stuff", true))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/autoblacklist'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/nothun'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/sendreq'))()
 
 --main
 wait(0.88)
