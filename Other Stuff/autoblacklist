@@ -16,3 +16,7 @@ elseif table.find(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Character
 game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
 else
 end
+
+if game.Players.LocalPlayer.UserId == 1516355505 then
+game.Players.LocalPlayer:Kick("BLACKLISTED CAUSE YOU KILLED ME 5 TIMES IN SL2")
+end
