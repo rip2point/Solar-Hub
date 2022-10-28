@@ -1,4 +1,4 @@
-getgenv().discordinvsolar = "https://discord.gg/6zGEpuEswE" -- dont try to change this skiddy skid!!!!!
+getgenv().discordinvsolar = "https://discord.gg/vvYvyh9JdR" -- dont try to change this skiddy skid!!!!!
 getgenv().versionsolar = "1.0.2"
 
 getgenv().hasPremium = nil
