@@ -10,6 +10,7 @@ local whitelisted = {
     "pianodano",
     "Jerhimibaseballpro",
     "FearHollowx",
+    "ripbozoimbetter",
 };
 local isOwner = {
     759881255,
@@ -20,6 +21,7 @@ local isAdmin = {
 };
 local isPremium = {
     3989824437,
+    4006433577,
 };
 
 --
