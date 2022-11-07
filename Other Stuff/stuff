@@ -46,13 +46,13 @@ if pl.LocalPlayer.Name ~= Host or pl.LocalPlayer.Name ~= Host2 or pl.LocalPlayer
 onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
 local speaker, message = pl[messageData.FromSpeaker], messageData.Message;
 
-if speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!check" then
+if speaker.Name == Host and message == "!check" or speaker.Name == Host2 and message == "!check" or speaker.Name == Host3 and message == "!check" then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SL2 IS MY FAVOURITE GAME!", 'All');
-elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!haha" then
+elseif speaker.Name == Host and message == "!haha" or speaker.Name == Host2 and message == "!haha" or speaker.Name == Host3 and message == "!haha" then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SolarW", 'All');
-elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!kick" then
+elseif speaker.Name == Host and message == "!kick" or speaker.Name == Host2 and message == "!kick" or speaker.Name == Host3 and message == "!kick" then
     pl.LocalPlayer:Kick("Someone with kick whitelists kicked you! report this to the discord server if this was abuse!");
-elseif speaker.Name == Host or speaker.Name == Host2 or speaker.Name == Host3 and message == "!crash" then
+elseif speaker.Name == Host and message == "!crash" or speaker.Name == Host2 and message == "!crash" or speaker.Name == Host3 and message == "!crash" then
     game:Shutdown();
 end
 end);
