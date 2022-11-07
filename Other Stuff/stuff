@@ -41,7 +41,7 @@ wait()
 
 local Host, Host2, Host3 = solaradmin[1], solaradmin[2], solaradmin[3] -- im an idiot this is such a bad method lool 
 
-if pl.LocalPlayer.Name ~= Host or pl.LocalPlayer.Name ~= Host2 or pl.LocalPlayer.Name ~= Host3 then
+if pl.LocalPlayer.Name == Host or pl.LocalPlayer.Name == Host2 or pl.LocalPlayer.Name == Host3 then else
        
 onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
 local speaker, message = pl[messageData.FromSpeaker], messageData.Message;
