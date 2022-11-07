@@ -40,12 +40,12 @@ for i, solarmin in pairs(game:GetService("Players"):GetPlayers()) do
 wait()
 
 local Host, Host2, Host3 = solaradmin[1], solaradmin[2], solaradmin[3] -- im an idiot this is such a bad method lool 
-
-
+wait()
+if game.Players.LocalPlayer.Name == Host then elseif game.Players.LocalPlayer.Name == Host2 then elseif game.Players.LocalPlayer.Name == Host3 then else
        
 onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
 local speaker, message = pl[messageData.FromSpeaker], messageData.Message;
-if pl.LocalPlayer.Name == Host or pl.LocalPlayer.Name == Host2 or pl.LocalPlayer.Name == Host3 then else
+
 if speaker.Name == Host and message == "!check" or speaker.Name == Host2 and message == "!check" or speaker.Name == Host3 and message == "!check" then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SL2 IS MY FAVOURITE GAME!", 'All');
 elseif speaker.Name == Host and message == "!haha" or speaker.Name == Host2 and message == "!haha" or speaker.Name == Host3 and message == "!haha" then
