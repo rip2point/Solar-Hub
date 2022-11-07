@@ -9,6 +9,7 @@ local whitelisted = {
     "twistedworId",
     "pianodano",
     "Jerhimibaseballpro",
+    "FearHollowx",
 };
 local isOwner = {
     759881255,
@@ -18,7 +19,7 @@ local isAdmin = {
     275263932,
 };
 local isPremium = {
-    1234,
+    3989824437,
 };
 
 --
