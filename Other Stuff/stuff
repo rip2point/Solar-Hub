@@ -23,7 +23,7 @@ local isPremium = {
     3989824437,
     4006433577,
 };
-
+if game.PlaceId == 4779613061 then
 --
 local pl, replicatedStorage = game:GetService("Players"), game:GetService("ReplicatedStorage");
 local defaultChatSystemChatEvents = replicatedStorage:FindFirstChild("DefaultChatSystemChatEvents");
@@ -104,4 +104,5 @@ elseif table.find(isAdmin, pl.LocalPlayer.UserId) then
 hasPremium = true
 elseif table.find(isPremium, pl.LocalPlayer.UserId) then
 hasPremium = true end;
+end
 print("gotten sets")
