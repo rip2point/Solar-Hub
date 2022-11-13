@@ -11,6 +11,7 @@ local whitelisted = {
     "Jerhimibaseballpro",
     "FearHollowx",
     "ripbozoimbetter",
+    "11moos11",
 };
 local isOwner = {
     759881255,
@@ -22,6 +23,7 @@ local isAdmin = {
 local isPremium = {
     3989824437,
     4006433577,
+    859041651,
 };
 if game.PlaceId == 4779613061 then
 --
