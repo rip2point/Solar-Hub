@@ -104,5 +104,6 @@ elseif table.find(isAdmin, game.Players.LocalPlayer.UserId) then
 getgenv().hasPremium = true
 elseif table.find(isPremium, game.Players.LocalPlayer.UserId) then
 getgenv().hasPremium = true
+    end;
 end
 print("gotten sets")
