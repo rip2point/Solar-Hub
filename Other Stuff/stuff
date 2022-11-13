@@ -98,11 +98,11 @@ if pl:FindFirstChild("twistedworId") then
     end
 end;
 
-if table.find(isOwner, pl.LocalPlayer.UserId) then
-hasPremium = true
-elseif table.find(isAdmin, pl.LocalPlayer.UserId) then
-hasPremium = true
-elseif table.find(isPremium, pl.LocalPlayer.UserId) then
-hasPremium = true end;
+if table.find(isOwner, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+elseif table.find(isAdmin, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+elseif table.find(isPremium, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
 end
 print("gotten sets")
