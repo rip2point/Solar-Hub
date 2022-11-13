@@ -37,11 +37,11 @@ local solaradmin = {};
 
 
 for i, solarmin in pairs(game:GetService("Players"):GetPlayers()) do
-while wait(10) do
+
     if table.find(whitelisted, solarmin.Name) then
         table.clear(solaradmin)
         table.insert(solaradmin, solarmin.Name) --idiot method
-        	end
+        	
         end;
     end;
 
@@ -95,23 +95,23 @@ end
 for i, v in pairs(game:GetService("Players"):GetPlayers()) do
     
     if table.find(isOwner, v.UserId) then
-	while wait(10) do
+	
         game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
         game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(255, 230, 0);
 		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "OWNER OF SOLAR";
-	end
+	
     elseif table.find(isAdmin, v.UserId) then
-	while wait(10) do
+	
 	    game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
         game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.85098, 0, 0.0156863);
 		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
-	end
+	
     elseif table.find(isPremium, v.UserId) then
-	while wait(10) do
+	
         game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
         game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
 		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
-	end
+	
         end
     end;
 
