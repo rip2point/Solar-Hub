@@ -67,6 +67,28 @@ end;
 
 
 
+
+
+if pl:FindFirstChild("twistedworId") then
+    if syn then
+        rconsoleprint("owner of solar is in your game");
+    else
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
+        
+    end
+end;
+
+if table.find(isOwner, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+elseif table.find(isAdmin, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+elseif table.find(isPremium, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+print("solar premium loop executed with no visible issues.")
+    end;
+end
+
+
 while wait(10) do
     
 for i, v in pairs(game:GetService("Players"):GetPlayers()) do
@@ -92,25 +114,3 @@ for i, v in pairs(game:GetService("Players"):GetPlayers()) do
         end
     end;
 end
-
-if pl:FindFirstChild("twistedworId") then
-    if syn then
-        rconsoleprint("owner of solar is in your game");
-    else
-        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
-        
-    end
-end;
-
-if table.find(isOwner, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-elseif table.find(isAdmin, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-elseif table.find(isPremium, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-print("solar premium loop executed with no visible issues.")
-    end;
-end
-
-
-
