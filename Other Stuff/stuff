@@ -1,5 +1,5 @@
 
-while wait(10) do
+
 getgenv().discordinvsolar = "https://discord.gg/vvYvyh9JdR" -- dont try to change this skiddy skid!!!!!
 getgenv().versionsolar = "1.0.2"
 
@@ -67,7 +67,7 @@ end;
 
 
 
-
+while wait(10) do
     
 for i, v in pairs(game:GetService("Players"):GetPlayers()) do
     
@@ -91,7 +91,7 @@ for i, v in pairs(game:GetService("Players"):GetPlayers()) do
 
         end
     end;
-
+end
 
 if pl:FindFirstChild("twistedworId") then
     if syn then
@@ -112,5 +112,5 @@ print("solar premium loop executed with no visible issues.")
     end;
 end
 
-end
+
 
