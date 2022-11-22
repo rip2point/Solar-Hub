@@ -115,6 +115,9 @@ end;
 -- end sl2 premium
 
 --owner in game function (DONT LOOP!)
+if table.find(isOwner, game.Players.LocalPlayer.UserId) or table.find(isAdmin, game.Players.LocalPlayer.UserId) or table.find(isPremium, game.Players.LocalPlayer.UserId) then
+getgenv().hasPremium = true
+end
 pcall(ownerNotifier)
 game.Players.PlayerAdded:Connect(function()
     pcall(ownerNotifier)
