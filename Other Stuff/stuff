@@ -30,11 +30,12 @@ local isPremium = {
     859041651,
     2580980319,
 };
-if game.PlaceId == 4779613061 then
--- for admin whitelist
+local ownerGamed = false
 function ownerNotifier()
     for i, owner in pairs(game.Players:GetPlayers()) do
+    if ownerGamed == true then else
     if table.find(isOwner, owner.UserId) then
+    ownerGamed = true
         if rconsoleprint then
             if syn then
                 rconsoleprint("@@LIGHT_CYAN@@")
@@ -46,8 +47,12 @@ function ownerNotifier()
             game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("A owner or admin has joined", 'All');
         end
     end
+    end
 end
 end
+if game.PlaceId == 4779613061 then
+-- for admin whitelist
+
 function adminUpdater()
 --clear the table to remove any premium users that have left
 table.clear(solarmins)
@@ -121,4 +126,9 @@ end
 pcall(ownerNotifier)
 game.Players.PlayerAdded:Connect(function()
     pcall(ownerNotifier)
+end)
+game.Players.PlayerRemoving:Connect(function(plr)
+if table.find(isOwner, plr.UserId) then
+ownerGamed = false
+end
 end)
