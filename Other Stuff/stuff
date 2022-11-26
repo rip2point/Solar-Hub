@@ -9,6 +9,7 @@ getgenv().hasPremium = nil
 -- lets GOOO i made the premium system actually kinda good but the code still sucks!!!! (still with poop methods)
 
 local whitelisted = {
+    "tymekthestalker",
     "twistedworId",
     "pianodano",
     "Jerhimibaseballpro",
