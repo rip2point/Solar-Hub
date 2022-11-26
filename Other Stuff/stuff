@@ -18,6 +18,7 @@ local whitelisted = {
     "11moos11",
     "snowbunnyreal",
     "15KJoazxy",
+    "stupiedbilly",
 };
 local isOwner = {
     759881255,
@@ -33,6 +34,7 @@ local isPremium = {
     2580980319,
     424883150,
     564374063,
+    1133869735,
 };
 local ownerGamed = false
 function ownerNotifier()
