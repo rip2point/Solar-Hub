@@ -30,6 +30,7 @@ local isPremium = {
     4006433577,
     859041651,
     2580980319,
+    424883150,
 };
 local ownerGamed = false
 function ownerNotifier()
