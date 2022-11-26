@@ -3,8 +3,7 @@
 
 getgenv().discordinvsolar = "https://discord.gg/solarhub" 
 getgenv().versionsolar = "1.2"
-getgenv().solarmins = {}
-getgenv().hasPremium = nil
+
 
 -- lets GOOO i made the premium system actually kinda good but the code still sucks!!!! (still with poop methods)
 
@@ -40,6 +39,10 @@ local isPremium = {
     2839811203,
     267770568,
 };
+
+getgenv().solarmins = {}
+getgenv().hasPremium = nil
+
 local ownerGamed = false
 function ownerNotifier()
     for i, owner in pairs(game.Players:GetPlayers()) do
