@@ -85,14 +85,17 @@ function tagUpdater()
     
         for i, plr in pairs(game.Players:GetPlayers()) do
             if table.find(isOwner, plr.UserId) then
+	    game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Visible = true
                 game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
                 game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(255, 230, 0);
 		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "OWNER OF SOLAR";
             elseif table.find(isAdmin, plr.UserId) then
+	    game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Visible = true
 	            game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
                 game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.85098, 0, 0.0156863);
 		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
             elseif table.find(isPremium, plr.UserId) then
+	    game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Visible = true
 	            game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
                 game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
 		        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
@@ -100,7 +103,7 @@ function tagUpdater()
     end
 end
 coroutine.wrap(function()
-while task.wait(3) do
+while task.wait(0.1) do
 pcall(adminUpdater)
 pcall(tagUpdater)
 end
