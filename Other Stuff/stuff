@@ -96,9 +96,9 @@ function tagUpdater()
 		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR ADMIN";
             elseif table.find(isPremium, plr.UserId) then
 	    game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Visible = true
-	            game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
-                game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
-		        game:GetService("Workspace"):FindFirstChild(v.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
+	            game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Font = "Gotham";
+                game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.TextColor3 = Color3.new(0.145098, 0.858824, 1);
+		        game:GetService("Workspace"):FindFirstChild(plr.Name).Head.Gui.MainFrame.Rank.Text = "SOLAR PREMIUM";
         end
     end
 end
