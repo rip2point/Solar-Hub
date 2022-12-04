@@ -20,8 +20,8 @@ local whitelisted = {
     "stupiedbilly",
     "Honkey275974",
     "FireDragon1562",
-    "VastStitch"
-    "Ritte13" -- 861032245950677002 discord userid make sure to check if he stops boosting
+    "VastStitch",
+    "Ritte13", -- 861032245950677002 discord userid make sure to check if he stops boosting
 };
 local isOwner = {
     759881255,
