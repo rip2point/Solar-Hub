@@ -1,4 +1,2 @@
 # Solar Hub
-Solar Hub coming soon
-# Solar FE V3
-Coming october 31st
+Solar Hub is semi opensourced. It is developed in lua, please ignore the messy code that is available to see.
