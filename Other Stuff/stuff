@@ -23,6 +23,7 @@ local whitelisted = {
     "VastStitch",
     "Ritte13", -- 861032245950677002 discord userid make sure to check if he stops boosting
     "christopherwcox",
+    "BK_Nate",
 };
 local isOwner = {
     759881255,
@@ -44,6 +45,7 @@ local isPremium = {
     195532999,
     2252725130, -- 861032245950677002 discord userid make sure to check if he stops boosting
     885873293,
+    4137931817,
 };
 
 getgenv().solarmins = {}
