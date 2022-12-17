@@ -21,7 +21,7 @@ local whitelisted = {
     "Honkey275974",
     "FireDragon1562",
     "VastStitch",
-    "Ritte13", -- 861032245950677002 discord userid make sure to check if he stops boosting
+    
     "christopherwcox",
     "BK_Nate",
 };
@@ -43,7 +43,6 @@ local isPremium = {
     2839811203,
     267770568,
     195532999,
-    2252725130, -- 861032245950677002 discord userid make sure to check if he stops boosting
     885873293,
     4137931817,
 };
