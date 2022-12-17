@@ -1,2 +1,4 @@
 # Solar Hub
-Solar Hub is semi opensourced. It is developed in lua, please ignore the messy code that is available to see.
+Solar Hub is a free to use Roblox Lua project allowing our users to obtain a competitive advantage against other players.
+
+Solar Hub is not responsible for your actions and/or any bans on Roblox.
