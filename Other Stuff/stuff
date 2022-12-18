@@ -23,6 +23,7 @@ local whitelisted = {
     "VastStitch",
     "christopherwcox",
     "BK_SGV",
+    "UnobtainableCircle",
 };
 local isOwner = {
     759881255,
@@ -44,6 +45,7 @@ local isPremium = {
     195532999,
     885873293,
     4148978554,
+    317398046,
 };
 
 getgenv().solarmins = {}
