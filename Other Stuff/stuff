@@ -21,9 +21,8 @@ local whitelisted = {
     "Honkey275974",
     "FireDragon1562",
     "VastStitch",
-    
     "christopherwcox",
-    "BK_Nate",
+    "BK_SGV",
 };
 local isOwner = {
     759881255,
@@ -44,7 +43,7 @@ local isPremium = {
     267770568,
     195532999,
     885873293,
-    4137931817,
+    4148978554,
 };
 
 getgenv().solarmins = {}
