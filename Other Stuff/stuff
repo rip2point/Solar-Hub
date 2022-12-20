@@ -26,6 +26,8 @@ local whitelisted = {
     "UnobtainableCircle",
     "MmMarcosm",
     "PermanentExpo",
+    "Spideypie15",
+    "dylanfoxuk",
 };
 local isOwner = {
     759881255,
@@ -50,6 +52,8 @@ local isPremium = {
     317398046,
     3177904794,
     1974376892,
+    3587101817,
+    1527860228,
 };
 
 getgenv().solarmins = {}
