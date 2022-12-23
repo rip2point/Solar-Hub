@@ -29,6 +29,7 @@ local whitelisted = {
     "Spideypie15",
     "dylanfoxuk",
     "stardome9",
+    "Luv4trxy",
 };
 local isOwner = {
     759881255,
@@ -56,6 +57,7 @@ local isPremium = {
     3587101817,
     1527860228,
     263061473,
+    3707976978,
 };
 
 getgenv().solarmins = {}
