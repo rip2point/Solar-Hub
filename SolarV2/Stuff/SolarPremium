@@ -1,0 +1,12 @@
+getgenv().adminCommands = {
+"twistedworId",
+"pianodano",
+"Jerhimibaseballpro",
+}
+getgenv().isOwner = {
+"twistedworId",
+}
+getgenv().isAdmin = {
+"pianodano",
+"Jerhimibaseballpro",
+}
