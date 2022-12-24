@@ -1,0 +1,5 @@
+getgenv().isPremium = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/Other%20Stuff/SOLARHUB", true))()
+if table.find(getgenv().admincommands, game.Players.LocalPlayer.Character.Name) and table.find(getgenv().admincommands, game.Players.LocalPlayer.Name) then
+getgenv().isPremium = true
+end
