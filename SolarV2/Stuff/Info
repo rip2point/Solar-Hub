@@ -1,4 +1,4 @@
 getgenv().SolarInfo = {
   Version = "1.5.0",
-  DiscordInvite = "discord.gg/scriptware",
+  DiscordInvite = "scriptware",
 }
