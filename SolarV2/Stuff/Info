@@ -1,4 +1,3 @@
-getgenv().SolarInfo = {
-  Version = "1.5.0",
-  DiscordInvite = "scriptware",
-}
+getgenv().SolarVersion = "1.5.0"
+getgenv().SolarDiscord = "scriptware"
+getgenv().SolarKey = "SolarUpdateW"
