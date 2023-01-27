@@ -14,7 +14,3 @@ end
 function ToggleButton(name, description, script)
 
 end
-
-function TabButton(par1, par2, pos)
-
-end
