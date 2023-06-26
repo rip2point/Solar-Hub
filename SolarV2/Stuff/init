@@ -1,5 +1,5 @@
 if game.PlaceId == 4779613061 or game.PlaceId == 11882240344 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/SolarV2/Games/SouthLondon2/Main", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/SL2", true))()
 elseif game.PlaceId == 8204899140 or game.PlaceId == 8206123457 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/FootballFusion2", true))()
 elseif game.PlaceId == 7540727946 or game.PlaceId == 10008443595 or game.PlaceId == 7540728600 or game.PlaceId == 11736628397 or game.PlaceId == 11731575387 or game.PlaceId == 11614119418 or game.PlaceId == 11154555024 or game.PlaceId == 12075737650 or game.PlaceId == 12500272272 then
