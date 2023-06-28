@@ -1,4 +1,7 @@
 if game.PlaceId == 4779613061 or game.PlaceId == 11882240344 then
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Utilities/SL2%20Premium%20Shit", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/SL2", true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/SL2", true))()
 elseif game.PlaceId == 8204899140 or game.PlaceId == 8206123457 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/FootballFusion2", true))()
