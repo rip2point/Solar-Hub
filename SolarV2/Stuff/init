@@ -3,8 +3,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Utilities/SL2%20Premium%20Shit", true))()
 elseif game.PlaceId == 8204899140 or game.PlaceId == 8206123457 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/FootballFusion2", true))()
-elseif game.PlaceId == 7540727946 or game.PlaceId == 10008443595 or game.PlaceId == 7540728600 or game.PlaceId == 11736628397 or game.PlaceId == 11731575387 or game.PlaceId == 11614119418 or game.PlaceId == 11154555024 or game.PlaceId == 12075737650 or game.PlaceId == 12500272272 or game.PlaceId == 10008450542 or game.PlaceId == 11708977357 or game.PlaceId == 13883948660 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/HoopsLife", true))()
 else
-game.Players.LocalPlayer:Kick("unsupported game.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/HoopsLife", true))()
 end 
