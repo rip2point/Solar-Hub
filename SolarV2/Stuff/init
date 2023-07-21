@@ -5,4 +5,5 @@ elseif game.PlaceId == 8204899140 or game.PlaceId == 8206123457 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/FootballFusion2", true))()
 else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/HoopsLife", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Utilities/Hoops%20Life%20Admin%20Shit", true))()
 end 
