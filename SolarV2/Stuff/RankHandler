@@ -1,5 +1,0 @@
-getgenv().isPremium = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/SolarV2/Stuff/SolarPremium", true))()
-if table.find(getgenv().adminCommands, game.Players.LocalPlayer.Character.Name) and table.find(getgenv().adminCommands, game.Players.LocalPlayer.Name) then
-getgenv().isPremium = true
-end
