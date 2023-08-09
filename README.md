@@ -1,4 +1,1 @@
-# Solar Hub
-Solar Hub is a free to use Roblox Lua project allowing our users to obtain a competitive advantage against other players.
-
-Solar Hub is not responsible for your actions and/or any bans on Roblox.
+![alt text](https://cdn.discordapp.com/attachments/913096981197500479/1138653297729863740/New_Project_8.png)
