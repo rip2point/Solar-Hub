@@ -3,3 +3,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/m
 else
 game.Players.LocalPlayer:Kick("You are not in the Solar Hub group! Join our group first: https://www.roblox.com/groups/16079813")
 setclipboard("https://www.roblox.com/groups/16079813")
+end
