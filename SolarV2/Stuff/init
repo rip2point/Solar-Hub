@@ -3,6 +3,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Utilities/SL2%20Premium%20Shit", true))()
 elseif game.PlaceId == 8204899140 or game.PlaceId == 8206123457 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/FootballFusion2", true))()
+elseif game.PlaceId == 14259168147 or game.PlaceId == 14386691987 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/BasketballLegends", true))()
 else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Games/HoopsLife", true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/SolarRevamp/main/Utilities/Hoops%20Life%20Admin%20Shit", true))()
