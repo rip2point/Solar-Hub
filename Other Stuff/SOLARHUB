@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solar-Hub/main/SolarV2/Stuff/SolarV2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rip2point/Solor/main/Main"))()
